@@ -6,6 +6,7 @@ import { actionCreators } from "./store/index";
 export default function App() {
   const account = useSelector((state) => state.account); //acess the data inside store
   const dispatch = useDispatch();
+  
   const { depositMoney, withdrawMoney } = bindActionCreators(
     actionCreators,
     dispatch
